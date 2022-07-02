@@ -1,0 +1,23 @@
+@layout('layouts/auth')
+
+@section('content')
+
+<section class="px-4 py-8">
+  <form action="" method="POST" class="flex flex-col gap-6">
+    <input type="text" name="id" placeholder="Identifiant"
+      class="placeholder:text-base placeholder:text-primary-light w-full py-1 border-b border-primary">
+    <input type="text" name="password" placeholder="Mot de passe"
+      class="placeholder:text-base placeholder:text-primary-light w-full py-1 border-b border-primary">
+    <input type="text" name="password_confirmation" placeholder="Confirmation du mot de passe"
+      class="placeholder:text-base placeholder:text-primary-light w-full py-1 border-b border-primary">
+    <div class="flex flex-row justify-between items-center">
+      <a href="{{ route('login') }}" class="text-sm text-slate-700">
+        Se connecter
+      </a>
+      <button type="submit" class="px-2 py-1 text-white rounded-full bg-primary">S'inscrire</button>
+    </div>
+  </form>
+
+</section>
+
+@endsection
